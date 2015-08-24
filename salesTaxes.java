@@ -10,26 +10,32 @@ public class salesTaxes {
     public static void main(String []args )
     {
       String str;
-      Scanner a=new Scanner(System.in);
+      int num,index=0;
+        Scanner a=new Scanner(System.in);
         System.out.println("Input1:");
+        System.out.println("Enter no of items:");
+        num=a.nextInt();
 
-      str=a.nextLine();
 
-      String[] parts= str.split(" ");
-
-        int i=0;
-        while(i<parts.length)
+        while(index<num)
         {
+            str = a.nextLine();
+            String[] parts = str.split(" ");
+
+            int i = 0;
+            while (i < parts.length)
+            {
+
+                System.out.println(parts[i]);
+
+                i++;
+            }
 
 
-             System.out.println(parts[i]);
+            index++;
 
-        i++;
 
         }
-
-
-
     }
 
 
