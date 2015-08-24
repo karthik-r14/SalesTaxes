@@ -2,10 +2,11 @@
  * Created by karthikr on 24/08/15.
  */
 import java.util.Scanner;
-
+import java.lang.Integer;
+import java.lang.Float;
 public class salesTaxes {
 
-
+   int Total,SalesTax;
 
     public static void main(String []args )
     {
@@ -31,7 +32,7 @@ public class salesTaxes {
                 i++;
             }
 
-
+            computeTax(parts);
             index++;
 
 
@@ -39,6 +40,14 @@ public class salesTaxes {
     }
 
 
+    static void computeTax(String [] s )
+    {
+
+        Integer quantity= Integer.parseInt(s[0]);
+        float cost=Float.parseFloat(s[s.length-1]);
+
+        //for(int i=1;i<s.length-1;++i)
+        //{
 
 
 
@@ -46,6 +55,11 @@ public class salesTaxes {
 
 
 
+       // }
+
+    System.out.println(quantity);
+    System.out.println(cost);
+    }
 
 
 }
