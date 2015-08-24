@@ -13,13 +13,36 @@ public class salesTaxes {
       Scanner a=new Scanner(System.in);
         System.out.println("Input1:");
 
-      str=a.next();
+      str=a.nextLine();
+
+      String[] parts= str.split(" ");
+
+        int i=0;
+        while(i<parts.length)
+        {
 
 
-      System.out.println(str);
+             System.out.println(parts[i]);
+
+        i++;
+
+        }
 
 
 
     }
 
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
